@@ -1,27 +1,22 @@
 # ConsumindoAPI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
-## Development server
+USANDO API REST COM HttpClient no angular 8
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+httpClient serve para fazer comunicação entre cliente e servidor usando protocolo http
 
-## Code scaffolding
+os métodos são: post, get, put, delete, patch, request, head, jsonp, options
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+o HttpClient usa a interface XMLHttpRequest para disponibilizar solicitações request e response interceptadas
+-manipulação de erros simplificada
+-suporte a api Observable
+-APIs e tratamento de erros
 
-## Build
+Para simular o uso do HttpClient, precisamos de uma API REST
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+para isso podemos usar o json-server, que faz uma API REST fake 
 
-## Running unit tests
+criando métodos responsáveis pelas requisições http usando o httpClient, criamos arquivo service para fazer as chamadas http
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+o subscribe é um dos operadores do observable da lib RxJS, ele notifica que a resposta vier e for transformada em json
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
